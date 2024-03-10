@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('wallpaper.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 1.2em;
+        }
+        
+        .container {
+            width: auto;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #40444B;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: grey;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgb(30, 29, 29);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 0.8em;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%; /* Adjusted width */
+            padding: 6px;
+            margin-bottom: 20px;
+            background-color: #36393F;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+        }
+        
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #72767D;
+        }
+        
+        button[type="submit"] {
+            width: 60%; /* Adjusted width */
+            padding: 10px;
+            background-color: #7289DA;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #677BC4;
+        }
+
+        .links {
+            margin-top: 20px; /* Adjusted margin */
+            text-align: center; /* Centered text */
+        }
+
+        .links a {
+            margin: 0 10px; /* Adjusted spacing */
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="resetForm" action="reset_password.php" method="POST">
+        <h1>Forgot Password</h1>
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <button type="submit" onclick="showPopup()">Reset Password</button>
+        <div class="links">
+            <p>Don't have an account? <a href="createacc.html">Create one</a></p>
+            <p>Remembered your password? <a href="login.html">Login</a></p>
+        </div>
+    </form>
+
+    <script>
+        function showPopup() {
+            alert("Password reset link sent to your email.");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
