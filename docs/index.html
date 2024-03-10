@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discord Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('wallpaper.jpg');
+            background-size: cover; /* or 100% 100% if you want to stretch the image */
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 1.2em;
+        }
+        
+        .container {
+            width: auto;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #40444B;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #36393F;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+        }
+        
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #72767D;
+        }
+        
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #7289DA;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #677BC4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome back</h1>
+        <form>
+            <h4 style="color: white;">We're so excited to see you back</h4>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <a href="forgot_password.html" style="display: block; text-align: center; margin: 10px 0; color: grey;">Forgot Password?</a>
+            <button type="submit">Login</button>
+            <p style="display: block; margin-top: 10px; color: black;">Need an account? <a href="createacc.html" style="color: grey;">Register</a></p>
+        </form>
+    </div>
+</body>
+</html>
